@@ -23,5 +23,5 @@ A Spring Boot application that polls a RSS feed every 5 minutes,and stores any i
    - service   - Business logic layer
    - utility   - Constant file.
    - 
-# swagger documentation
+# Swagger API documentation
 http://localhost:8084/swagger-ui/index.html
