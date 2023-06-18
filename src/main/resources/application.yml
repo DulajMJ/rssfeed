@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rss-feed-api-service
+  profiles:
+    active: dev
+app:
+  version: v1
+
+scheduler:
+  rss:
+    feed-delay: 5000
+
+constant:
+  url-feed: 7

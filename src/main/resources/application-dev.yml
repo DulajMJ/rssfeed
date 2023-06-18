@@ -1,0 +1,15 @@
+server:
+  port: 8084
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:rss_feed
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
