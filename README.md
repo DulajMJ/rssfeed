@@ -22,6 +22,15 @@ A Spring Boot application that polls a RSS feed every 5 minutes and stores any i
    - repository- Database repository
    - service   - Business logic layer
    - utility   - Constant file.
-   - 
+## To run a Spring Boot project using the command line 
+  1. Open a command prompt or terminal.
+  2. Navigate to the root directory of your Spring Boot project. This is the directory that contains your pom.xml 
+  3. Build the project (if necessary) by running one of the following commands 
+      -- mvn clean install
+      * This command will compile your code, resolve dependencies, and generate the executable JARy
+   4. Once the build is successful, you can run the Spring Boot application by executing the following command
+      --mvn spring-boot:run
+      * This command starts the embedded Tomcat server and deploys your Spring Boot application
+
 # Swagger API documentation
 http://localhost:8084/swagger-ui/index.html
