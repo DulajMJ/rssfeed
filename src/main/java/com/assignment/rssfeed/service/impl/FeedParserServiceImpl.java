@@ -10,7 +10,9 @@ import com.sun.syndication.io.SyndFeedInput;
 import com.sun.syndication.io.XmlReader;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
 
@@ -45,7 +47,11 @@ public class FeedParserServiceImpl implements FeedParserService {
     return entries
         .stream()
         .map(this::mapToFeedItem)
-        .toList();
+        .toList().stream()
+        .sorted(Comparator.comparing(FeedItem::getPublicationDate).reversed())
+        .limit(10)
+        .collect(Collectors.toList());
+
   }
 
   /**

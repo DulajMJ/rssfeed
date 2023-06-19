@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50a7a7e-45f6-4005-812b-93335d570be4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/config/UrlConfigurationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-integration-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/integration-test/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/integration-test/reset.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/RestControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/SpringContextTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/controller/RestResponsePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/controller/RssPollControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/repository/FeedItemRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/constant/ApiConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/constant/ApiConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/controller/RssPollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/controller/RssPollController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/dto/FeedItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/dto/FeedItemDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorMessageDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorMessageUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/PropertyValidationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/RssPollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/RssPollService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/RssfeedApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/RssfeedApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/FeedParserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/FeedParserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/RssPollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/RssPollServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-integration-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-integration-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/RssfeedApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment/rssfeed/RssfeedApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assignment/rssfeed/RssfeedApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,5 +126,16 @@
       <updated>1687105582002</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/RssPollServiceImpl.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

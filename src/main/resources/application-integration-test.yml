@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:rss_feed_test;DB_CLOSE_ON_EXIT=FALSE
-    username:
+    username: sa
     password:
   jpa:
     database: h2

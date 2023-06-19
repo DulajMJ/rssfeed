@@ -7,7 +7,7 @@ app:
   version: v1
 
 scheduler:
-  feed: 30000
+  feed: 500
 
 url:
   feed: https://feeds.simplecast.com/54nAGcIl
