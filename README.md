@@ -1,20 +1,20 @@
 # RSS Parser
-A Spring Boot application that polls a RSS feed every 5 minutes,and stores any in-memory database H2
+A Spring Boot application that polls a RSS feed every 5 minutes and stores any in-memory database H2
 
 ## Project Technologies
    - Java 17
    - Spring boot 2.7.6
    - H2 Database
-   - MVN buil tool
+   - MVN build tool
 ## Project Set-Up and Environment
-   - Install java 17 
+   - Install Java 17 
    - used application.yml file for the active environment
    - application-dev.yml development environment
    - application-qa.yml QA environment
    - application-prod.yml production environment
 
 ## Project Structure 
-   - config    - Project configuration(kafka,logging,etc)
+   - config    - Project configuration(Kafka,logging,etc)
    - dto       - Used only to transfer data from one process or context to another.
    - entity    - Database entity class.
    - exception - Application exception
