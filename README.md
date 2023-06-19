@@ -41,6 +41,42 @@ Note: Make sure you have the necessary build tools (Maven or Gradle) installed a
 http://localhost:8084/swagger-ui/index.html
 
 ## REST API Endpoints
+ Request Curl
 curl -X 'GET' \
   'http://localhost:8084/api/v1/feed?page=0&size=10&sortField=publicationDate&direction=desc' \
   -H 'accept: application/json'
+
+  Request URL
+  http://localhost:8084/api/v1/feed?page=0&size=10&sortField=publicationDate&direction=desc
+
+  Response
+  {
+  "content": [],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageSize": 10,
+    "pageNumber": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalElements": 0,
+  "totalPages": 0,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "first": true,
+  "numberOfElements": 0,
+  "empty": true
+}
+
+
