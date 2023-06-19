@@ -49,6 +49,13 @@ curl -X 'GET' \
   Request URL
   http://localhost:8084/api/v1/feed?page=0&size=10&sortField=publicationDate&direction=desc
 
+  # Future improvements
+  1. Endpoint Validation and RSS Feed Validation
+  2. Error Handling and Feedback
+  3. Add more unit testing and integration tests
+  4. Project document file update. 
+  
+
   
 
 
