@@ -39,3 +39,8 @@ Note: Make sure you have the necessary build tools (Maven or Gradle) installed a
 
 # Swagger API documentation
 http://localhost:8084/swagger-ui/index.html
+
+## REST API Endpoints
+curl -X 'GET' \
+  'http://localhost:8084/api/v1/feed?page=0&size=10&sortField=publicationDate&direction=desc' \
+  -H 'accept: application/json'
