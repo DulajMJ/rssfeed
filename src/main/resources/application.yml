@@ -7,8 +7,7 @@ app:
   version: v1
 
 scheduler:
-  rss:
-    feed-delay: 5000
+  feed: 30000
 
-constant:
-  url-feed: 7
+url:
+  feed: https://feeds.simplecast.com/54nAGcIl

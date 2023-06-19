@@ -4,7 +4,6 @@ import com.assignment.rssfeed.dto.FeedItemDto;
 import com.assignment.rssfeed.entity.FeedItem;
 import com.assignment.rssfeed.repository.FeedItemRepository;
 import com.assignment.rssfeed.service.RssPollService;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import lombok.SneakyThrows;
@@ -12,7 +11,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -20,6 +18,7 @@ import org.springframework.stereotype.Service;
 /**
  * Mange Rss feed details.All business logic related rss feed.
  */
+
 @Slf4j
 @Service
 public class RssPollServiceImpl implements RssPollService {
@@ -38,10 +37,10 @@ public class RssPollServiceImpl implements RssPollService {
    * Pool rss feed details. Run every 5 minutes.
    */
   @SneakyThrows
-  @Scheduled(fixedDelay = 300000)
+  @Scheduled(fixedDelayString = "${scheduler.feed}")
   public void pollRssFeed() {
     log.info("Run every 5 minutes");
-    createRssFeed(feedParserService.getFeedItems(""));
+    createRssFeed(feedParserService.getFeedItems());
     log.info("Rss feed successful update.");
   }
 
@@ -55,7 +54,6 @@ public class RssPollServiceImpl implements RssPollService {
       FeedItem validateItem = validationRssFeed(item);
       rssFeedCreateUpdate(item, validateItem);
     });
-
   }
 
   /**
@@ -90,15 +88,37 @@ public class RssPollServiceImpl implements RssPollService {
 
   }
 
+  /**
+   * Get FeedItem.
+   *
+   * @param page      - Request details.
+   * @param size      - Request details.
+   * @param sortField - Request details.
+   * @param direction - Request details.
+   * @return - Page<FeedItemDto>.
+   */
   @Override
   public Page<FeedItemDto> findAll(int page, int size,
       String sortField, String direction) {
-
     Sort.Direction sortDirection = Sort.Direction.fromString(direction);
     Sort sort = Sort.by(sortDirection, sortField);
     PageRequest pageRequest = PageRequest.of(page, size, sort);
-    Page<FeedItem> feedItems=  feedItemRepository.findAll(pageRequest);
+    Page<FeedItem> feedItems = feedItemRepository.findAll(pageRequest);
+    return feedItems.map(this::convertToFeedItemDto);
+  }
 
-    return null;
+  /**
+   * FeedItem entity convert to FeedItemDto.
+   *
+   * @param feedItem - Feed item details.
+   * @return - FeedItemDto.
+   */
+  private FeedItemDto convertToFeedItemDto(FeedItem feedItem) {
+    return FeedItemDto.builder()
+        .author(feedItem.getAuthor())
+        .title(feedItem.getTitle())
+        .updatedDate(feedItem.getUpdatedDate())
+        .description(feedItem.getDescription())
+        .build();
   }
 }

@@ -1,5 +1,6 @@
 package com.assignment.rssfeed.service.impl;
 
+import com.assignment.rssfeed.config.UrlConfigurationProperties;
 import com.assignment.rssfeed.entity.FeedItem;
 import com.assignment.rssfeed.service.FeedParserService;
 import com.sun.syndication.feed.synd.SyndEntry;
@@ -10,26 +11,33 @@ import com.sun.syndication.io.XmlReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
 
 /**
  * FeedParserService implement class. Mange remote data search.
  */
 @Service
+@EnableConfigurationProperties(UrlConfigurationProperties.class)
 public class FeedParserServiceImpl implements FeedParserService {
+
+  private final UrlConfigurationProperties urlConfigurationProperties;
+
+  public FeedParserServiceImpl(UrlConfigurationProperties urlConfigurationProperties) {
+    this.urlConfigurationProperties = urlConfigurationProperties;
+  }
 
   /**
    * Access remote url.
    *
-   * @param url - RssFeed Url.
    * @return - List<FeedItem>.
    * @throws FeedException
    * @throws IOException
    */
-  public List<FeedItem> getFeedItems(String url)
+  public List<FeedItem> getFeedItems()
       throws FeedException, IOException {
 
-    URL feedUrl = new URL("");
+    URL feedUrl = new URL(urlConfigurationProperties.getFeed());
     SyndFeedInput input = new SyndFeedInput();
     SyndFeed feed = input.build(new XmlReader(feedUrl));
     List<SyndEntry> entries = feed.getEntries();

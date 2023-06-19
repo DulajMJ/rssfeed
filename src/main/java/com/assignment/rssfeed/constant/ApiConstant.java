@@ -19,10 +19,12 @@ public class ApiConstant {
 
   public static final String FORWARD_SLASH = "/";
 
-  public static final String BASE_PATH = PREFIX + FORWARD_SLASH;
-  public static final String HTTP_GET = "GET";
+  public static final String VERSION = "v1";
+
+  public static final String BASE_PATH = PREFIX + FORWARD_SLASH + VERSION;
 
   public static final String RESPONSE_CODE_200 = "200";
+
   public static final String RESPONSE_CODE_400 = "400";
 
   public static final String RESPONSE_CODE_404 = "404";

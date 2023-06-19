@@ -5,33 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50a7a7e-45f6-4005-812b-93335d570be4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/constant/ApiConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/controller/RssPollController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/dto/FeedItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/entity/FeedItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorMessageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorMessageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/PropertyValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/repository/FeedItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/FeedParserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/RssPollService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/FeedParserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/RssPollServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/snowflake/Snowflake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/snowflake/SnowflakeIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/config/UrlConfigurationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-integration-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/integration-test/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/integration-test/reset.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/RestControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/SpringContextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/controller/RestResponsePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/controller/RssPollControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/repository/FeedItemRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/RssfeedApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/RssfeedApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/constant/ApiConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/constant/ApiConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/controller/RssPollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/controller/RssPollController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/dto/FeedItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/dto/FeedItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorMessageDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/ErrorMessageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/exception/PropertyValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/RssPollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/RssPollService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/FeedParserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/FeedParserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/RssPollServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/rssfeed/service/impl/RssPollServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/rssfeed/RssfeedApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +56,13 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/DulajMadumal/OneDrive - Eyepax IT Consulting (Pvt) Limited/Desktop/Java Developer Assignment/rssfeed/rssfeed/src/main/java/com/assignment/rssfeed"
+    "last_opened_file_path": "C:/Users/DulajMadumal/OneDrive - Eyepax IT Consulting (Pvt) Limited/Desktop/Java Developer Assignment/rssfeed/rssfeed/src/main/resources"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\DulajMadumal\OneDrive - Eyepax IT Consulting (Pvt) Limited\Desktop\Java Developer Assignment\rssfeed\rssfeed\src\main\java\com\assignment\rssfeed" />
       <recent name="C:\Users\DulajMadumal\OneDrive - Eyepax IT Consulting (Pvt) Limited\Desktop\Java Developer Assignment\rssfeed\rssfeed\src\main\resources" />
+      <recent name="C:\Users\DulajMadumal\OneDrive - Eyepax IT Consulting (Pvt) Limited\Desktop\Java Developer Assignment\rssfeed\rssfeed\src\main\java\com\assignment\rssfeed" />
     </key>
   </component>
   <component name="RunManager" selected="Application.RssfeedApplication">
@@ -94,9 +92,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FeedItemRepositoryTest.feedItem_validRequest_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rssfeed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment.rssfeed.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment.rssfeed.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.rssfeed.repository.FeedItemRepositoryTest" />
+      <option name="METHOD_NAME" value="feedItem_validRequest_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RssPollControllerTest.getContactsWhenSizePageNotSetThenReturnAllWithDefaultParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rssfeed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment.rssfeed.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment.rssfeed.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.rssfeed.controller.RssPollControllerTest" />
+      <option name="METHOD_NAME" value="getContactsWhenSizePageNotSetThenReturnAllWithDefaultParams" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RssfeedApplication" />
+        <item itemvalue="JUnit.RssPollControllerTest.getContactsWhenSizePageNotSetThenReturnAllWithDefaultParams" />
+        <item itemvalue="JUnit.FeedItemRepositoryTest.feedItem_validRequest_success" />
         <item itemvalue="Application.RssFeedApplication" />
       </list>
     </recent_temporary>

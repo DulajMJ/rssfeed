@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 
 @Builder
 @Data
-@EqualsAndHashCode(callSuper = false)
 @AllArgsConstructor
 @NoArgsConstructor
 public class FeedItemDto {
@@ -18,12 +17,9 @@ public class FeedItemDto {
 
   private String author;
 
-
   private String description;
 
-
   private Date publicationDate;
-
 
   private Date updatedDate;
 
