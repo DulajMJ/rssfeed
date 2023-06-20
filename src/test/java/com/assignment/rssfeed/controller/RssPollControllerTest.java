@@ -29,7 +29,7 @@ class RssPollControllerTest extends RestControllerTest {
           executionPhase = AFTER_TEST_METHOD)
   })
   @Test
-  void getContactsWhenSizePageNotSetThenReturnAllWithDefaultParams() throws Exception {
+  void feedItem_default_value_validRequest_success() throws Exception {
     MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders
             .get(FEED_URL)
             .contentType(MediaType.APPLICATION_JSON)
